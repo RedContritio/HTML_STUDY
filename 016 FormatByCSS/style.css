@@ -1,0 +1,50 @@
+body
+{
+	background-color:#000000;
+}
+
+header
+{
+	background-color:#000000;
+	color:#FFFFFF;
+	text-align:center;
+	padding:3px;
+}
+
+nav
+{
+	background-color:#FFFFFF;
+	line-height:60px;
+	float:left;
+	width:300px;
+	height:500px;
+}
+
+
+section
+{
+	background-color:#EFEFEF;
+	color:#000000
+	line-height:30px;
+	float:top;
+	height:400px;
+	padding:30px;
+	padding-left:60px;
+}
+
+footer
+{
+    background-color:black;
+	float:top;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
+p.HiddenText
+{
+	color:#FFFFFF;
+}
+
+

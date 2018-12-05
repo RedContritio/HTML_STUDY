@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<meta charset="UTF-8" />
+<head>
+	<title>Responce By Self </title>
+	<style>
+	.SmallBlock
+	{
+		float:left;
+		margin:5px;
+		padding:15px;
+		width:300px;
+		height:200px;
+		border:1px solid black;
+	}
+	.CenterClass
+	{
+		text-align:center;
+	}
+	</style>
+</head>
+<body>
+<!--实际上，这里的内容并没有什么用处
+	首先，这个不会被太多人看到；
+	其次，没有写明具体指令的用法。-->
+	<h2 class="CenterClass"> Pragma 简述 </h2>
+	<div class="SmallBlock">
+		<h2> #pragma once </h2><hr/>
+		<p> 保证所在文件只会被包含一次，它是基于磁盘文件的，而#ifndef则是基于宏的。 </p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma warning </h2><hr/>
+		<p> 允许有选择性的修改编译器的警告消息的行为。 </p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma hdrstop </h2><hr/>
+		<p>表示预编译头文件到此为止，后面的头文件不进行预编译。BCB可以预编译头文件以加快链接的速度，但如果所有头文件都进行预编译又可能占太多磁盘空间，所以使用这个选项排除一些头文件。 </p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma message </h2><hr/>
+		<p>在标准输出设备中输出指定文本信息而不结束程序运行。</p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma data_seg </h2><hr/>
+		<p>一般用于DLL中，它能够设置程序中的初始化变量在obj文件中所在的数据段。如果未指定参数，初始化变量将放置在默认数据段.data中。</p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma code_seg </h2><hr/>
+		<p>它能够设置程序中的函数在obj文件中所在的代码段。如果未指定参数，函数将放置在默认代码段.text中。</p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma pack </h2><hr/>
+		<p>改变编译器的字节对齐方式。</p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma comment </h2><hr/>
+		<p>将一个注释记录放置到对象文件或可执行文件中。</p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma section </h2><hr/>
+		<p>创建一个段。</p>
+		<hr/>
+	</div>
+	<div class="SmallBlock">
+		<h2> #pragma push_macro与#pragma pop_macro </h2><hr/>
+		<p> 前者将指定的宏压入栈中，相当于暂时存储，以备以后使用；后者将栈顶的宏出栈，弹出的宏将覆盖当前名称相同的宏。</p>
+		<hr/>
+	</div>
+</body>
+</html>
