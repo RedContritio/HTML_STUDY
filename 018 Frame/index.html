@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title> Frame Test 框架模式测试 </title>
+</head>
+<meta charset="UTF-8" />
+<!--frameset 不应该放在body 标签内部 -->
+<frameset rows="25%,50%" border="0">
+	<frame src="subpage.html" noresize="noresize"/>
+	<frameset cols="30%,35%,35%" border="1">
+		<frame src="https://www.baidu.com" />
+		<!--No resize tag 可以用来锁定给定frame的两侧（水平或竖直）-->
+		<frame src="https://uis.nwpu.edu.cn/cas/login?service=https%3A%2F%2Fecampus.nwpu.edu.cn%2Fc%2Fportal%2Flogin%3Fredirect%3D%252Fweb%252Fguest%252Findex%26p_l_id%3D10213" alt="翱翔门户"/>
+		<frame src="http://www.w3school.com.cn/index.html" />
+	</frameset>
+<noframes>
+<body>
+	<h2 style="color:#FF0000">FBI Warning</h2>
+	<p> your sha bi explorer have no frameset tag support </p>
+</body>
+</noframes>
+</frameset>
+</html>
