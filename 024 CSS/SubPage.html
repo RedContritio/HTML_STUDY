@@ -5,10 +5,22 @@
 	<h1><a href="index.html">4A艾斯艾斯 简单测试</a> 的<a href="SubPage.html">分页面</a></h1>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" type="text/css" href="style2.css" />
+	<style type="">
+		[title~=None]
+		{
+			color:white;
+			background-color:black;
+		}
+	</style>
 </head>
-<body>
+<body style="background-image:url(img/bg.png)">
 	<h2 title="Head Description"> H2 Text </h2>
-	<p title="None Description"> This paragraph is titled as "None Description" </p>
+	<p title="Description"> 这一段只是普通的描述性文本 ，啦啦啦 </p>
+	<p title="None"> 这里是 None 值的title 属性的例子 </p>
+	<p title="None Description"> 以及，内外部冲突时，仍然采用后定义覆盖先定义（实际上是后实现覆盖先实现） 	</p>
 	<p title="Description Before"> 这一段用的文本是 “得四库如爱普深 逼佛” </p>
+	<div style="background-color:#303030;background-image:url(img/bg2.png);height:400px;background-repeat:repeat-x">
+		<p title="None">另一个<a href="SubPage1.html">子页面</p>
+	</div>
 </body>
 </html>

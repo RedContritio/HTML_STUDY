@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title> CSS Player SubPage 1 </title>
+	<meta charset="UTF-8" />
+	<style type="text/css" >
+		[title~=BG2]
+		{
+			background:url(img/bg2.png) no-repeat fixed 25% 50%; 
+		}
+		[title~=BG1],[title~=BG]
+		{
+			background-image:url(img/bg.png);background-repeat:no-repeat;background-attachment:fixed;background-position:50% 20%;
+		}
+		<!-- 与 title 内顺序无关，保持优先级 -->
+	</style>
+</head>
+<frameset cols="50%,50%" title="BG2">
+	<frame src="" noresize="noresize" border="0"/>
+	<frame src="../019 FrameShow/PageC.html" />
+</frameset>
+
+</html>
