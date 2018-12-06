@@ -1,0 +1,22 @@
+[title]
+{
+	background-color:#FFF8FF;
+}
+
+
+
+[title~=Description]
+{
+	color:#206020;
+}
+
+/* 当一个元素适用两条规则时，越靠后的规则优先级越高 */
+[title~=Before]
+{
+	color:#603030;
+}
+
+[href]
+{
+	color:#C0F0C0;
+}

@@ -1,0 +1,16 @@
+h1,h2,h3,h4,h5,h6
+{
+	background-color:rgb(40%,30%,30%);
+	color:pink;
+}
+
+#FuckID li span
+{
+	background-color:#D0D0FF;
+	font-size:350%;
+}
+
+.FuckClass
+{
+	font-family:"楷体";
+}

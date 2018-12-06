@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title> CSS player </title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style1.css" />
+	<h1> 4A艾斯艾斯 简单测试 </h1>
+	<style>
+		body
+		{
+			background-color:#70A070;
+		}
+		body h3
+		{
+			background-color:#70D070;
+		}
+		#FuckID li
+		{
+			background-color:#B0B0DF;
+			text-align:right;
+		}
+		.FuckClass p
+		{
+			font-size:120%;
+		}
+		<!--基于ID的派生选择器是采用 # 来实现的-->
+		<!--基于class的派生选择器是采用.实现的-->
+	</style>
+</head>
+<body>
+	<h2>爱吃二也继承了粉色属性 ，但是比起抱得的规则，它会选择优先遵循爱吃的规则 </h2>
+	<h3 class="FuckClass"> 爱吃三本该直接继承 h 族属性，但是它被内部 style 特化了对抱得的支持 </h3>
+	<p> 但是屁不在乎 </p>
+	<div id="FuckID">
+		<ul>
+			<li> UL Testing... </li>
+			<li> &lt;span&gt; is used as following </li>
+			<li><span> 这里是特殊语句 </span></li>
+			<!--派生选择器的自由度很高-->
+			<li> 但是这里不是 </li>
+		</ul>
+		<span> 这里是在 &lt;li&gt; 之外了 ，理应无法享受派生选择器 </span><br/>
+		<del style="font-size:70%">要是能享受就奇怪了啊喂</del>
+	</div>
+	<div class="FuckClass">
+		<p> 这里应该享受CLASS 派生选择器的125% <del>这里也是，内部继承外部STYLE</del></p>
+		<b> 但是这里只是普通加粗了 </b>
+	</div>
+	<a href="SubPage.html">或许我应该考虑用一个分页面来实现其他样式？</a>
+</body>
+</html>
