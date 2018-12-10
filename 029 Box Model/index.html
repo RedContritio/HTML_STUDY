@@ -1,0 +1,33 @@
+<!DOTYPE html>
+<html lang="zh-CN">
+<head>
+	<title> Box Model </title>
+	<meta charset="UTF-8" />
+	<style>
+		*
+		{
+			border:solid 1px black;
+		}
+		html
+		{
+			border-color:red;
+		}
+		body
+		{
+			border-color:blue;
+		}
+	</style>
+</head>
+<body>
+	<p style="padding:10%;background-color:#FFD0D0"> <span style="background-color:white">HHH </span></p>
+	<p style="padding:10px 10%;background-color:#D0FFD0">
+		<img src="boxmodel.png"/>
+		<img src="boxmodel.png"/>
+	</p>
+	<div style="padding-left:20%">
+		<p> There is a &lt;span&gt; looks like a button .</p>
+		<a href="javascript:alert(1);" style="text-decoration:none;color:black;border-style:none;"><span style="border:inset 5px gray"> Button </span></a>
+		<p> Footer </p>
+	</div>
+</body>
+</html>

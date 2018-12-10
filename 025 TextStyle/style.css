@@ -1,0 +1,21 @@
+a:link
+{
+	text-decoration:none;
+	color:#000000;
+}
+
+a:visited
+{
+	text-decoration:none;
+	color:#FFFFFF
+}
+/* It seems that can not it  */
+a:hover
+{
+	color:#00FF00;
+}
+
+a:active
+{
+	color:#00FFFF;
+}
